@@ -26,9 +26,9 @@ export const DogTagsSVG = () => (
       <rect x="8" y="30" width="64" height="46" rx="7" fill="url(#metal1)" />
       <path d="M40 76 L34 84 L46 84 Z" fill="url(#metal1)" />
       <rect x="12" y="35" width="56" height="1.5" rx="1" fill="#888" opacity="0.4" />
-      <text x="40" y="50" textAnchor="middle" fontFamily="monospace" fontSize="6.5" fill="#666" fontWeight="bold">ASPINALL  G</text>
-      <text x="40" y="60" textAnchor="middle" fontFamily="monospace" fontSize="5.5" fill="#777">NX 12345  AIF</text>
-      <text x="40" y="69" textAnchor="middle" fontFamily="monospace" fontSize="5" fill="#777">C OF E</text>
+      <text x="40" y="50" textAnchor="middle" fontFamily="monospace" fontSize="6.5" fill="#666" fontWeight="bold">LOREM  I</text>
+      <text x="40" y="60" textAnchor="middle" fontFamily="monospace" fontSize="5.5" fill="#777">IP 00000  SUM</text>
+      <text x="40" y="69" textAnchor="middle" fontFamily="monospace" fontSize="5" fill="#777">D O E</text>
     </g>
     {/* Front tag */}
     <g filter="url(#metalShadow)">
@@ -37,9 +37,9 @@ export const DogTagsSVG = () => (
       {/* Embossed lines */}
       <rect x="10" y="42" width="56" height="1.5" rx="1" fill="#999" opacity="0.3" />
       <rect x="10" y="80" width="56" height="1.5" rx="1" fill="#888" opacity="0.3" />
-      <text x="38" y="58" textAnchor="middle" fontFamily="monospace" fontSize="6.5" fill="#666" fontWeight="bold">ASPINALL  G</text>
-      <text x="38" y="68" textAnchor="middle" fontFamily="monospace" fontSize="5.5" fill="#777">NX 12345  AIF</text>
-      <text x="38" y="77" textAnchor="middle" fontFamily="monospace" fontSize="5" fill="#777">C OF E</text>
+      <text x="38" y="58" textAnchor="middle" fontFamily="monospace" fontSize="6.5" fill="#666" fontWeight="bold">LOREM  I</text>
+      <text x="38" y="68" textAnchor="middle" fontFamily="monospace" fontSize="5.5" fill="#777">IP 00000  SUM</text>
+      <text x="38" y="77" textAnchor="middle" fontFamily="monospace" fontSize="5" fill="#777">D O E</text>
     </g>
   </svg>
 )
@@ -84,8 +84,8 @@ export const CameraSVG = () => (
       <rect x="12" y="15" width="18" height="8" rx="2" fill="#1a1008" />
       <rect x="13" y="16" width="16" height="6" rx="1" fill="url(#chrome)" opacity="0.3" />
       {/* BROWNIE text */}
-      <text x="55" y="23" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="7" fill="#c8a060" letterSpacing="2" opacity="0.9">BROWNIE</text>
-      <text x="55" y="31" textAnchor="middle" fontFamily="sans-serif" fontSize="4.5" fill="#a07040" letterSpacing="1" opacity="0.7">KODAK</text>
+      <text x="55" y="23" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="7" fill="#c8a060" letterSpacing="2" opacity="0.9">LOREM</text>
+      <text x="55" y="31" textAnchor="middle" fontFamily="sans-serif" fontSize="4.5" fill="#a07040" letterSpacing="1" opacity="0.7">IPSUM</text>
       {/* Main lens ring */}
       <circle cx="55" cy="55" r="24" fill="url(#chrome)" />
       <circle cx="55" cy="55" r="21" fill="#1a1008" />
@@ -126,7 +126,7 @@ export const PhotographsSVG = () => (
       {/* Blurry scene: figure, horizon */}
       <line x1="54" y1="60" x2="106" y2="62" stroke="#4a3a28" strokeWidth="4" opacity="0.6" />
       <rect x="70" y="42" width="8" height="18" rx="1" fill="#2a1a0a" opacity="0.7" />
-      <text x="80" y="89" textAnchor="middle" fontFamily="'Crimson Text', serif" fontSize="5" fill="#9a8a6a" fontStyle="italic">no. 34</text>
+      <text x="80" y="89" textAnchor="middle" fontFamily="'Crimson Text', serif" fontSize="5" fill="#9a8a6a" fontStyle="italic">no. 00</text>
     </g>
     {/* Photo 2 — middle, slight left tilt */}
     <g filter="url(#photoShadow)" transform="rotate(-8, 40, 55)">
@@ -136,7 +136,7 @@ export const PhotographsSVG = () => (
       <rect x="15" y="45" width="20" height="16" rx="1" fill="#2a1a0a" opacity="0.5" />
       <rect x="40" y="48" width="15" height="13" rx="1" fill="#2a1a0a" opacity="0.4" />
       <line x1="12" y1="61" x2="64" y2="63" stroke="#3a2a1a" strokeWidth="3" opacity="0.4" />
-      <text x="38" y="90" textAnchor="middle" fontFamily="'Crimson Text', serif" fontSize="5" fill="#9a8a6a" fontStyle="italic">no. 12</text>
+      <text x="38" y="90" textAnchor="middle" fontFamily="'Crimson Text', serif" fontSize="5" fill="#9a8a6a" fontStyle="italic">no. 00</text>
     </g>
     {/* Photo 1 — front, face up */}
     <g filter="url(#photoShadow)" transform="rotate(3, 55, 55)">
@@ -154,7 +154,7 @@ export const PhotographsSVG = () => (
       <ellipse cx="73" cy="43" rx="6" ry="7" fill="#2a3a10" opacity="0.5" />
       {/* Caption area */}
       <line x1="29" y1="96" x2="86" y2="96" stroke="#d0b880" strokeWidth="0.5" opacity="0.5" />
-      <text x="58" y="101" textAnchor="middle" fontFamily="'Crimson Text', serif" fontSize="5" fill="#9a8a6a" fontStyle="italic">Thailand, 1943</text>
+      <text x="58" y="101" textAnchor="middle" fontFamily="'Crimson Text', serif" fontSize="5" fill="#9a8a6a" fontStyle="italic">Lorem, 0000</text>
     </g>
   </svg>
 )
@@ -179,8 +179,8 @@ export const LetterSVG = () => (
       <line x1="4" y1="29" x2="91" y2="29" stroke="#c4a870" strokeWidth="0.5" strokeDasharray="1 3" opacity="0.6" />
       <line x1="4" y1="52" x2="91" y2="52" stroke="#c4a870" strokeWidth="0.5" strokeDasharray="1 3" opacity="0.6" />
       {/* Header */}
-      <text x="12" y="18" fontFamily="'Playfair Display', serif" fontSize="7" fill="#5a3a10" fontStyle="italic">Changi Barracks, Singapore</text>
-      <text x="62" y="18" fontFamily="'Playfair Display', serif" fontSize="6" fill="#6a4a20">1942</text>
+      <text x="12" y="18" fontFamily="'Playfair Display', serif" fontSize="7" fill="#5a3a10" fontStyle="italic">Lorem Ipsum, Dolor</text>
+      <text x="62" y="18" fontFamily="'Playfair Display', serif" fontSize="6" fill="#6a4a20">0000</text>
       <line x1="8" y1="21" x2="87" y2="21" stroke="#b09060" strokeWidth="0.5" opacity="0.7" />
       {/* Body text lines */}
       {[32, 39, 46].map((y, i) => (
@@ -190,13 +190,13 @@ export const LetterSVG = () => (
         <line key={i} x1="10" x2={i === 0 ? 70 : 45} y1={y} y2={y} stroke="#8a6a30" strokeWidth="1.2" opacity="0.4" />
       ))}
       {/* Dear Mum text */}
-      <text x="10" y="30" fontFamily="'Crimson Text', serif" fontSize="6.5" fill="#5a3a10" fontStyle="italic">Dear Mum &amp; Dad,</text>
+      <text x="10" y="30" fontFamily="'Crimson Text', serif" fontSize="6.5" fill="#5a3a10" fontStyle="italic">Lorem ipsum dolor,</text>
       {/* Closing */}
-      <text x="10" y="71" fontFamily="'Crimson Text', serif" fontSize="6" fill="#5a3a10" fontStyle="italic">Your son, George</text>
+      <text x="10" y="71" fontFamily="'Crimson Text', serif" fontSize="6" fill="#5a3a10" fontStyle="italic">Consectetur adipiscing</text>
       {/* Censor stamp */}
       <circle cx="72" cy="55" r="12" fill="none" stroke="#8b2020" strokeWidth="1.5" opacity="0.35" />
-      <text x="72" y="53" textAnchor="middle" fontFamily="monospace" fontSize="4.5" fill="#8b2020" opacity="0.35">PASSED</text>
-      <text x="72" y="59" textAnchor="middle" fontFamily="monospace" fontSize="4.5" fill="#8b2020" opacity="0.35">CENSOR</text>
+      <text x="72" y="53" textAnchor="middle" fontFamily="monospace" fontSize="4.5" fill="#8b2020" opacity="0.35">LOREM</text>
+      <text x="72" y="59" textAnchor="middle" fontFamily="monospace" fontSize="4.5" fill="#8b2020" opacity="0.35">IPSUM</text>
     </g>
   </svg>
 )
@@ -225,7 +225,7 @@ export const RailwayMapSVG = () => (
         <line key={i} x1="8" y1={y} x2="122" y2={y} stroke="#a07830" strokeWidth="0.3" opacity="0.4" />
       ))}
       {/* Title */}
-      <text x="65" y="18" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="6.5" fill="#5a3010" letterSpacing="1">BURMA-SIAM RAILWAY</text>
+      <text x="65" y="18" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="6.5" fill="#5a3010" letterSpacing="1">LOREM IPSUM RAILWAY</text>
       <line x1="18" y1="20" x2="112" y2="20" stroke="#5a3010" strokeWidth="0.5" opacity="0.6" />
       {/* Railway route — jagged path through jungle */}
       <path
@@ -234,9 +234,9 @@ export const RailwayMapSVG = () => (
       />
       {/* Location markers */}
       <circle cx="20" cy="80" r="3.5" fill="#8b2020" opacity="0.8" />
-      <text x="8" y="91" fontFamily="'Crimson Text', serif" fontSize="5.5" fill="#5a3010" fontStyle="italic">Bangkok</text>
+      <text x="8" y="91" fontFamily="'Crimson Text', serif" fontSize="5.5" fill="#5a3010" fontStyle="italic">Lorem</text>
       <circle cx="90" cy="24" r="3.5" fill="#8b2020" opacity="0.8" />
-      <text x="78" y="18" fontFamily="'Crimson Text', serif" fontSize="5.5" fill="#5a3010" fontStyle="italic">Rangoon</text>
+      <text x="78" y="18" fontFamily="'Crimson Text', serif" fontSize="5.5" fill="#5a3010" fontStyle="italic">Ipsum</text>
       {/* Jungle shading */}
       <ellipse cx="45" cy="55" rx="10" ry="6" fill="#4a6020" opacity="0.2" />
       <ellipse cx="65" cy="38" rx="8" ry="5" fill="#4a6020" opacity="0.2" />
@@ -244,7 +244,7 @@ export const RailwayMapSVG = () => (
       <line x1="15" y1="88" x2="55" y2="88" stroke="#5a3010" strokeWidth="1" />
       <line x1="15" y1="85" x2="15" y2="91" stroke="#5a3010" strokeWidth="1" />
       <line x1="55" y1="85" x2="55" y2="91" stroke="#5a3010" strokeWidth="1" />
-      <text x="35" y="97" textAnchor="middle" fontFamily="sans-serif" fontSize="4.5" fill="#5a3010">415 km</text>
+      <text x="35" y="97" textAnchor="middle" fontFamily="sans-serif" fontSize="4.5" fill="#5a3010">000 km</text>
       {/* Coffee stain ring */}
       <circle cx="105" cy="75" r="14" fill="none" stroke="#7a5020" strokeWidth="1.5" opacity="0.2" />
     </g>
@@ -288,7 +288,7 @@ export const MessTinSVG = () => (
       <line x1="20" y1="30" x2="28" y2="34" stroke="#aaa8a0" strokeWidth="0.5" opacity="0.5" />
       <line x1="60" y1="35" x2="72" y2="32" stroke="#aaa8a0" strokeWidth="0.5" opacity="0.4" />
       {/* Engraving */}
-      <text x="52" y="50" textAnchor="middle" fontFamily="monospace" fontSize="5" fill="#5a5850" opacity="0.8" letterSpacing="1">G.ASPINALL</text>
+      <text x="52" y="50" textAnchor="middle" fontFamily="monospace" fontSize="5" fill="#5a5850" opacity="0.8" letterSpacing="1">L.IPSUM</text>
     </g>
   </svg>
 )
@@ -308,12 +308,12 @@ export const EnlistmentSVG = () => (
       <rect x="4" y="4" width="77" height="107" rx="2" fill="url(#docPaper)" />
       <rect x="4" y="4" width="77" height="107" rx="2" fill="none" stroke="#b09050" strokeWidth="0.5" opacity="0.7" />
       {/* AIF Header */}
-      <text x="42" y="16" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="6" fill="#2a1a00" letterSpacing="1">AUSTRALIAN</text>
-      <text x="42" y="24" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="6" fill="#2a1a00" letterSpacing="1">IMPERIAL FORCE</text>
+      <text x="42" y="16" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="6" fill="#2a1a00" letterSpacing="1">LOREM</text>
+      <text x="42" y="24" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="6" fill="#2a1a00" letterSpacing="1">IPSUM DOLOR</text>
       <line x1="10" y1="28" x2="74" y2="28" stroke="#b09050" strokeWidth="0.7" />
       <line x1="10" y1="30" x2="74" y2="30" stroke="#b09050" strokeWidth="0.3" opacity="0.5" />
       {/* ATTESTATION label */}
-      <text x="42" y="39" textAnchor="middle" fontFamily="'Playfair Display', serif" fontSize="5.5" fill="#3a2010" fontStyle="italic">Attestation Paper</text>
+      <text x="42" y="39" textAnchor="middle" fontFamily="'Playfair Display', serif" fontSize="5.5" fill="#3a2010" fontStyle="italic">Lorem Ipsum Paper</text>
       {/* Form fields */}
       {[48, 57, 66, 75, 84].map((y, i) => (
         <g key={i}>
@@ -322,13 +322,13 @@ export const EnlistmentSVG = () => (
       ))}
       {/* Labels */}
       <text x="10" y="46" fontFamily="sans-serif" fontSize="4" fill="#6a4a20" opacity="0.8">Name:</text>
-      <text x="28" y="46" fontFamily="'Crimson Text', serif" fontSize="5" fill="#3a2010">Aspinall, George</text>
+      <text x="28" y="46" fontFamily="'Crimson Text', serif" fontSize="5" fill="#3a2010">Lorem, Ipsum</text>
       <text x="10" y="55" fontFamily="sans-serif" fontSize="4" fill="#6a4a20" opacity="0.8">Date of Birth:</text>
-      <text x="38" y="55" fontFamily="'Crimson Text', serif" fontSize="5" fill="#3a2010">1921</text>
+      <text x="38" y="55" fontFamily="'Crimson Text', serif" fontSize="5" fill="#3a2010">0000</text>
       <text x="10" y="64" fontFamily="sans-serif" fontSize="4" fill="#6a4a20" opacity="0.8">Birthplace:</text>
-      <text x="33" y="64" fontFamily="'Crimson Text', serif" fontSize="5" fill="#3a2010">Wagga Wagga, NSW</text>
+      <text x="33" y="64" fontFamily="'Crimson Text', serif" fontSize="5" fill="#3a2010">Lorem Ipsum, DOL</text>
       <text x="10" y="73" fontFamily="sans-serif" fontSize="4" fill="#6a4a20" opacity="0.8">Trade:</text>
-      <text x="26" y="73" fontFamily="'Crimson Text', serif" fontSize="5" fill="#3a2010">Signaller</text>
+      <text x="26" y="73" fontFamily="'Crimson Text', serif" fontSize="5" fill="#3a2010">Lorem Ipsum</text>
       {/* Signature area */}
       <line x1="10" y1="95" x2="55" y2="95" stroke="#8a6030" strokeWidth="0.8" />
       <text x="10" y="100" fontFamily="sans-serif" fontSize="4" fill="#6a4a20" opacity="0.7">Signature of Recruit</text>
@@ -360,17 +360,17 @@ export const NewspaperSVG = () => (
       <rect x="4" y="4" width="92" height="122" rx="1" fill="none" stroke="#a09060" strokeWidth="0.5" opacity="0.5" />
       {/* Masthead */}
       <rect x="4" y="4" width="92" height="16" rx="1" fill="#1a1008" />
-      <text x="50" y="14" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="6.5" fill="#e8d8a8" letterSpacing="1">THE STRAITS TIMES</text>
+      <text x="50" y="14" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="6.5" fill="#e8d8a8" letterSpacing="1">THE LOREM TIMES</text>
       {/* Date */}
-      <text x="50" y="24" textAnchor="middle" fontFamily="sans-serif" fontSize="4" fill="#5a4020">Monday, February 16, 1942</text>
+      <text x="50" y="24" textAnchor="middle" fontFamily="sans-serif" fontSize="4" fill="#5a4020">Lorem ipsum dolor, 0000</text>
       <line x1="8" y1="26" x2="92" y2="26" stroke="#8a7030" strokeWidth="1" />
       <line x1="8" y1="28" x2="92" y2="28" stroke="#8a7030" strokeWidth="0.3" />
       {/* HEADLINE */}
-      <text x="50" y="39" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="11" fill="#0a0600" fontWeight="bold" letterSpacing="-0.5">SINGAPORE</text>
-      <text x="50" y="52" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="11" fill="#0a0600" fontWeight="bold" letterSpacing="-0.5">SURRENDERS</text>
+      <text x="50" y="39" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="11" fill="#0a0600" fontWeight="bold" letterSpacing="-0.5">LOREM</text>
+      <text x="50" y="52" textAnchor="middle" fontFamily="'Cinzel', serif" fontSize="11" fill="#0a0600" fontWeight="bold" letterSpacing="-0.5">IPSUM</text>
       <line x1="8" y1="56" x2="92" y2="56" stroke="#5a4020" strokeWidth="0.8" />
       {/* Subheadline */}
-      <text x="50" y="63" textAnchor="middle" fontFamily="'Playfair Display', serif" fontSize="5.5" fill="#2a1800" fontStyle="italic">130,000 Allied troops taken prisoner</text>
+      <text x="50" y="63" textAnchor="middle" fontFamily="'Playfair Display', serif" fontSize="5.5" fill="#2a1800" fontStyle="italic">Lorem ipsum dolor sit amet consectetur</text>
       <line x1="8" y1="67" x2="92" y2="67" stroke="#8a7030" strokeWidth="0.3" />
       {/* Columns */}
       <line x1="50" y1="68" x2="50" y2="122" stroke="#8a7030" strokeWidth="0.5" opacity="0.5" />
@@ -384,7 +384,7 @@ export const NewspaperSVG = () => (
       ))}
       {/* Small photo placeholder box */}
       <rect x="10" y="68" width="36" height="22" fill="#8a7050" opacity="0.3" />
-      <text x="28" y="81" textAnchor="middle" fontFamily="sans-serif" fontSize="4" fill="#5a3010" opacity="0.6">Gen. Percival</text>
+      <text x="28" y="81" textAnchor="middle" fontFamily="sans-serif" fontSize="4" fill="#5a3010" opacity="0.6">Lorem Ipsum</text>
     </g>
   </svg>
 )
@@ -395,7 +395,7 @@ export const artifacts = [
     id: 'dogtags',
     label: 'Dog Tags',
     chapter: 'changi',
-    description: "George's Army identification tags, worn throughout captivity",
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod',
     position: { x: 14, y: 20 },
     rotation: -18,
     SVG: DogTagsSVG,
@@ -405,7 +405,7 @@ export const artifacts = [
     id: 'camera',
     label: 'Kodak Brownie',
     chapter: 'railway',
-    description: 'The hidden camera George used to document the Death Railway',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut labore et dolore',
     position: { x: 60, y: 12 },
     rotation: 8,
     SVG: CameraSVG,
@@ -415,7 +415,7 @@ export const artifacts = [
     id: 'photographs',
     label: 'Secret Photographs',
     chapter: 'railway',
-    description: 'Over 200 forbidden photographs taken at enormous personal risk',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit quis nostrud exercitation',
     position: { x: 38, y: 42 },
     rotation: -5,
     SVG: PhotographsSVG,
@@ -425,7 +425,7 @@ export const artifacts = [
     id: 'letter',
     label: 'Letter Home',
     chapter: 'changi',
-    description: 'A censored letter to his family from Changi Prison',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed eiusmod tempor',
     position: { x: 72, y: 55 },
     rotation: 14,
     SVG: LetterSVG,
@@ -435,7 +435,7 @@ export const artifacts = [
     id: 'railwaymap',
     label: 'Railway Map',
     chapter: 'railway',
-    description: 'A hand-drawn map of the 415km Burma-Thailand Death Railway',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut enim ad minim',
     position: { x: 22, y: 58 },
     rotation: 6,
     SVG: RailwayMapSVG,
@@ -445,7 +445,7 @@ export const artifacts = [
     id: 'messtin',
     label: 'Mess Tin',
     chapter: 'changi',
-    description: "George's dented mess tin — the only vessel for his daily rations",
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit duis aute irure dolor',
     position: { x: 64, y: 32 },
     rotation: -10,
     SVG: MessTinSVG,
@@ -455,7 +455,7 @@ export const artifacts = [
     id: 'enlistment',
     label: 'Enlistment Papers',
     chapter: 'enlistment',
-    description: 'The attestation paper George signed to join the 2nd AIF in 1940',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit excepteur sint occaecat',
     position: { x: 8, y: 42 },
     rotation: 10,
     SVG: EnlistmentSVG,
@@ -465,7 +465,7 @@ export const artifacts = [
     id: 'newspaper',
     label: '"Singapore Surrenders"',
     chapter: 'changi',
-    description: 'The Straits Times front page, February 16, 1942',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sunt in culpa qui',
     position: { x: 76, y: 22 },
     rotation: -12,
     SVG: NewspaperSVG,

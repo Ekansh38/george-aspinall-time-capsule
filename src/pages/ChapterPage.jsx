@@ -533,7 +533,7 @@ export default function ChapterPage() {
           letterSpacing: '0.25em',
           color: '#4a3a28',
         }}>
-          GEORGE ASPINALL — A DIGITAL TIME CAPSULE
+          LOREM IPSUM — A DOLOR SIT AMET
         </p>
       </div>
     </motion.div>

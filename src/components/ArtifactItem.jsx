@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import gsap from 'gsap'
 import Tilt from 'react-parallax-tilt'
@@ -13,14 +13,14 @@ const chapterColors = {
 
 export default function ArtifactItem({ artifact, index }) {
   const { label, chapter, description, position, rotation, SVG } = artifact
-  // 3-layer structure prevents GSAP overwriting the CSS rotation:
-  // posRef    → absolute position + GSAP entrance (opacity, scale, y)
-  // rotator   → CSS rotation — never touched by GSAP
-  // lifterRef → GSAP hover target (y, scale, filter)
   const posRef = useRef(null)
   const lifterRef = useRef(null)
   const tooltipRef = useRef(null)
   const [hovered, setHovered] = useState(false)
+  const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 })
+  const isDragging = useRef(false)
+  const dragStart = useRef({ px: 0, py: 0, ox: 0, oy: 0 })
+  const hasMoved = useRef(false)
   const navigate = useNavigate()
   const accentColor = chapterColors[chapter] || '#c8933d'
 
@@ -37,6 +37,7 @@ export default function ArtifactItem({ artifact, index }) {
   }, [index])
 
   const handleMouseEnter = () => {
+    if (isDragging.current) return
     setHovered(true)
     gsap.killTweensOf(lifterRef.current)
     gsap.killTweensOf(tooltipRef.current)
@@ -64,36 +65,69 @@ export default function ArtifactItem({ artifact, index }) {
     })
   }
 
-  const handleClick = () => {
-    gsap.to(posRef.current, {
-      scale: 0.9, duration: 0.12,
-      yoyo: true, repeat: 1,
-      onComplete: () => navigate(`/chapter/${chapter}`),
+  const handlePointerDown = useCallback((e) => {
+    e.stopPropagation()
+    isDragging.current = true
+    hasMoved.current = false
+    dragStart.current = {
+      px: e.clientX,
+      py: e.clientY,
+      ox: dragOffset.x,
+      oy: dragOffset.y,
+    }
+    e.currentTarget.setPointerCapture(e.pointerId)
+    // hide tooltip while dragging
+    gsap.to(tooltipRef.current, { opacity: 0, y: 12, duration: 0.1 })
+  }, [dragOffset])
+
+  const handlePointerMove = useCallback((e) => {
+    if (!isDragging.current) return
+    const dx = e.clientX - dragStart.current.px
+    const dy = e.clientY - dragStart.current.py
+    if (Math.abs(dx) > 3 || Math.abs(dy) > 3) hasMoved.current = true
+    setDragOffset({
+      x: dragStart.current.ox + dx,
+      y: dragStart.current.oy + dy,
     })
-  }
+  }, [])
+
+  const handlePointerUp = useCallback((e) => {
+    if (!isDragging.current) return
+    isDragging.current = false
+    if (!hasMoved.current) {
+      // treat as click — navigate to chapter
+      gsap.to(posRef.current, {
+        scale: 0.9, duration: 0.12,
+        yoyo: true, repeat: 1,
+        onComplete: () => navigate(`/chapter/${chapter}`),
+      })
+    }
+  }, [chapter, navigate])
 
   return (
-    // Layer 1: absolute positioner (GSAP entrance target + parallax)
     <div
       ref={posRef}
       className="artifact-parallax"
       style={{
         position: 'absolute',
-        left: `${position.x}%`,
-        top: `${position.y}%`,
-        zIndex: hovered ? 200 : 10 + index,
+        left: `calc(${position.x}% + ${dragOffset.x}px)`,
+        top: `calc(${position.y}% + ${dragOffset.y}px)`,
+        zIndex: isDragging.current ? 500 : hovered ? 200 : 10 + index,
         userSelect: 'none',
         willChange: 'transform',
+        touchAction: 'none',
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      onClick={handleClick}
+      onPointerDown={handlePointerDown}
+      onPointerMove={handlePointerMove}
+      onPointerUp={handlePointerUp}
     >
       {/* Layer 2: rotator — CSS only, GSAP never touches this */}
       <div style={{
         transform: `rotate(${rotation}deg)`,
         transformOrigin: 'center center',
-        cursor: 'pointer',
+        cursor: isDragging.current ? 'grabbing' : 'grab',
         position: 'relative',
       }}>
         {/* react-parallax-tilt for 3D hover tilt */}
@@ -102,8 +136,8 @@ export default function ArtifactItem({ artifact, index }) {
           tiltMaxAngleY={10}
           scale={1}
           transitionSpeed={600}
-          tiltEnable={hovered}
-          glareEnable={hovered}
+          tiltEnable={hovered && !isDragging.current}
+          glareEnable={hovered && !isDragging.current}
           glareMaxOpacity={0.12}
           glareColor={accentColor}
           glarePosition="all"
