@@ -3,6 +3,7 @@ import { AnimatePresence } from 'framer-motion'
 import Landing from './components/Landing'
 import TimeCapsule from './components/TimeCapsule'
 import ChapterPage from './pages/ChapterPage'
+import ArtifactPage from './pages/ArtifactPage'
 import CustomCursor from './components/CustomCursor'
 
 function AnimatedRoutes() {
@@ -12,6 +13,7 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Landing />} />
         <Route path="/capsule" element={<TimeCapsule />} />
+        <Route path="/artifact/:id" element={<ArtifactPage />} />
         <Route path="/chapter/:id" element={<ChapterPage />} />
       </Routes>
     </AnimatePresence>

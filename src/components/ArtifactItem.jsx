@@ -12,7 +12,7 @@ const chapterColors = {
 }
 
 export default function ArtifactItem({ artifact, index }) {
-  const { label, chapter, description, position, rotation, SVG } = artifact
+  const { label, chapter, description, position, rotation, SVG, id } = artifact
   const posRef = useRef(null)
   const lifterRef = useRef(null)
   const tooltipRef = useRef(null)
@@ -95,14 +95,14 @@ export default function ArtifactItem({ artifact, index }) {
     if (!isDragging.current) return
     isDragging.current = false
     if (!hasMoved.current) {
-      // treat as click — navigate to chapter
+      // treat as click — navigate to artifact page
       gsap.to(posRef.current, {
         scale: 0.9, duration: 0.12,
         yoyo: true, repeat: 1,
-        onComplete: () => navigate(`/chapter/${chapter}`),
+        onComplete: () => navigate(`/artifact/${id}`),
       })
     }
-  }, [chapter, navigate])
+  }, [id, navigate])
 
   return (
     <div
