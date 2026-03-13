@@ -136,13 +136,13 @@ export default function TimeCapsule() {
             fontWeight: 600, color: '#f5e8cc',
             letterSpacing: '0.3em', marginBottom: '0.2rem',
           }}>
-            LOREM IPSUM
+            GEORGE ASPINALL
           </h1>
           <p style={{
             fontFamily: 'Crimson Text, serif', fontStyle: 'italic',
             fontSize: '0.78rem', color: '#6a5540', letterSpacing: '0.08em',
           }}>
-            Lorem ipsum dolor — sit amet consectetur adipiscing
+            Hover the artefacts — click to enter each chapter
           </p>
         </div>
         <div style={{ width: '60px' }} />

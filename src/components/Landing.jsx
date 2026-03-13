@@ -218,7 +218,7 @@ export default function Landing() {
             textShadow: '0 0 60px rgba(200,147,61,0.25)',
           }}
         >
-          LOREM IPSUM
+          GEORGE ASPINALL
         </h1>
 
         {/* Years */}
@@ -233,7 +233,7 @@ export default function Landing() {
             marginBottom: '0.75rem',
           }}
         >
-          0000 — 0000
+          1921 — 2010
         </div>
 
         {/* Subtitle */}
@@ -249,7 +249,7 @@ export default function Landing() {
             marginBottom: '3.5rem',
           }}
         >
-          Lorem &nbsp;·&nbsp; Ipsum &nbsp;·&nbsp; Dolor
+          Soldier &nbsp;·&nbsp; Prisoner &nbsp;·&nbsp; Witness
         </p>
 
         {/* Wooden Box */}
@@ -372,7 +372,7 @@ export default function Landing() {
                 opacity: 0.6,
                 whiteSpace: 'nowrap',
               }}>
-                A LOREM IPSUM CAPSULE
+                A DIGITAL TIME CAPSULE
               </div>
             </div>
           </div>
@@ -414,7 +414,7 @@ export default function Landing() {
                 e.target.style.boxShadow = 'none'
               }}
             >
-              Open the Lorem Ipsum
+              Open the Capsule
             </button>
           ) : (
             <motion.p
@@ -439,7 +439,7 @@ export default function Landing() {
             fontStyle: 'italic',
             letterSpacing: '0.05em',
           }}>
-            Lorem ipsum dolor sit amet
+            A history museum experience
           </p>
         </div>
       </div>
