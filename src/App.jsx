@@ -4,7 +4,6 @@ import Landing from './components/Landing'
 import TimeCapsule from './components/TimeCapsule'
 import ChapterPage from './pages/ChapterPage'
 import ArtifactPage from './pages/ArtifactPage'
-import CustomCursor from './components/CustomCursor'
 
 function AnimatedRoutes() {
   const location = useLocation()
@@ -23,8 +22,7 @@ function AnimatedRoutes() {
 function App() {
   return (
     <BrowserRouter>
-      <CustomCursor />
-      <AnimatedRoutes />
+<AnimatedRoutes />
     </BrowserRouter>
   )
 }
