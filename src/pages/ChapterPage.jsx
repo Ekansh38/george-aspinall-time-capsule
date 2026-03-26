@@ -289,6 +289,20 @@ export default function ChapterPage() {
           position: 'relative',
           padding: '2rem 2.5rem',
         }}>
+          {/* Fictional label */}
+          {chapter.quoteFictional && (
+            <p style={{
+              fontFamily: 'Cinzel, serif',
+              fontSize: '0.55rem',
+              letterSpacing: '0.3em',
+              color: '#5a4a38',
+              marginBottom: '1.2rem',
+              textTransform: 'uppercase',
+              margin: '0 0 1.2rem 0',
+            }}>
+              Fictional
+            </p>
+          )}
           {/* Decorative quote marks */}
           <div style={{
             position: 'absolute',
@@ -311,29 +325,16 @@ export default function ChapterPage() {
           }}>
             {chapter.quote}
           </p>
-          <div style={{ marginTop: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
-            <p style={{
-              fontFamily: 'Cinzel, serif',
-              fontSize: '0.65rem',
-              letterSpacing: '0.2em',
-              color: accentColor,
-              opacity: 0.7,
-              margin: 0,
-            }}>
-              {chapter.quoteSource}
-            </p>
-            {chapter.quoteFictional && (
-              <span style={{
-                fontFamily: 'Crimson Text, serif',
-                fontStyle: 'italic',
-                fontSize: '0.75rem',
-                color: '#5a4a38',
-                opacity: 0.8,
-              }}>
-                dramatised
-              </span>
-            )}
-          </div>
+          <p style={{
+            marginTop: '1rem',
+            fontFamily: 'Cinzel, serif',
+            fontSize: '0.65rem',
+            letterSpacing: '0.2em',
+            color: accentColor,
+            opacity: 0.7,
+          }}>
+            {chapter.quoteSource}
+          </p>
         </div>
       </motion.div>
 
