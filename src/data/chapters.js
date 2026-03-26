@@ -6,7 +6,8 @@ export const chapters = {
     years: '1941',
     accentColor: '#8b7355',
     accentLight: '#c4a87a',
-    quote: '"He was just a young bloke from Parramatta who signed up to serve his country — not knowing what lay ahead."',
+    quote: '"He was just a young bloke from Parramatta who signed up to serve his country, not knowing what lay ahead."',
+    quoteSource: 'Fictional',
     intro: `George Aspinall was born in 1923 in Old Junee, a town in New South Wales. Australia. Like lots of young Australians of his generation, he grew up during the Great Depression, a time when jobs were hard to get and life was hard. When World War II broke out in 1939, Australia quickly joined the fight alongside Britain.\n\nGeorge enlisted in the 2nd Australian Imperial Force in 1941 at the age of 17. He joined the 2nd/30th Infantry Battalion as a Motor Mechanic. He boarded a troopship and left Australia, not knowing when he would return, or if he ever would. He was heading to Malaya, where the British military maintained a large presence and where Australia believed a strong defence was in place. That belief, as history would show, was tragically wrong.`,
     events: [
       { year: '1923', title: 'Born', text: 'George Aspinall born in Old Junee, New South Wales' },
@@ -24,8 +25,8 @@ export const chapters = {
     years: '1942',
     accentColor: '#6b3a2a',
     accentLight: '#c4614a',
-    quote: '"On 15 February 1942, 130,000 Allied troops surrendered — the largest capitulation in British military history. We became prisoners."',
-    quoteSource: '— George Aspinall',
+    quote: '"On 15 February 1942, 130,000 Allied troops surrendered. It was the largest capitulation in British military history. We became prisoners."',
+    quoteSource: 'Fictional',
     intro: `On 8 February 1942, Japanese forces crossed the Johor Strait and invaded Singapore Island. After just one week of fighting, the situation became hopeless for the Allied defenders. On 15 February, General Arthur Percival surrendered and around 80,000 Allied troops in Singapore became prisoners of war overnight, the largest capitulation in British military history.\n\nGeorge and thousands of Australian soldiers were marched to Changi, a large British military barracks on the eastern tip of Singapore Island. Food was scarce, disease spread quickly, and men had no idea what would happen to them next. George held onto his Kodak Brownie camera and began secretly photographing life in the camp, despite the Japanese strictly forbidding any photography.\n\nThe mood among prisoners was one of disbelief and deep sadness. Letters home were occasionally allowed, but Japanese censors read every word before they were sent. Almost nothing of the real situation could be put on paper.`,
     events: [
       { year: 'Feb 8, 1942', title: 'Invasion', text: 'Japanese forces landed on Singapore Island under General Tomoyuki Yamashita' },
@@ -64,7 +65,7 @@ export const chapters = {
     accentColor: '#2a3a5a',
     accentLight: '#4a6aaa',
     quote: '"These photographs must never be forgotten. The men who built that railway must never be forgotten."',
-    quoteSource: '— George Aspinall',
+    quoteSource: 'Fictional',
     intro: `When Japan surrendered in August 1945, George Aspinall was finally free. He returned to Australia carrying his hidden photographs, a collection of around 100 images he had taken as a prisoner of war. For nearly four decades, George kept the photographs private. The memories were too painful, and the world was still recovering from the war.\n\nIt wasn't until 1984 that the photographs were published in a book called "Changi Photographer." For the first time, the wider public could see what George had risked his life to record. The images shocked many Australians who had not known the full extent of what prisoners had endured. George became recognised as an important historical witness, a man who had not only survived the Death Railway, but preserved its story for future generations.\n\nGeorge Aspinall passed away on 26 October 1991. His photographs remain one of the most significant visual records of the prisoner-of-war experience in the Pacific War.`,
     events: [
       { year: 'Oct 1945', title: 'Return', text: 'George arrives back in Australia on 9 October 1945 aboard the SS Esperance Bay' },
@@ -83,6 +84,7 @@ export const chapters = {
     accentColor: '#7a4a7a',
     accentLight: '#c48ac4',
     quote: '"George was not just a photographer or a soldier. He was a father, a husband, and a man who loved the simple things in life."',
+    quoteSource: 'Fictional',
     intro: `After returning from the war, George Aspinall rebuilt his life in New South Wales. Like many veterans, he found it difficult to talk about what he had experienced, and for many years he focused on living as normally as possible. He married and raised a family, returning to the quiet, ordinary rhythms of Australian life that he had dreamed about during his years in captivity.\n\nPhotography remained a lifelong passion, but now it was for joy rather than survival. George photographed his family, the Australian bush, and the landscapes of New South Wales. He loved the outdoors: bushwalking, gardening, and simply being in nature. After so many years of jungle captivity, the open space and freedom of the Australian countryside meant everything to him.\n\nGeorge was also an active member of his local community and kept in touch with men who had shared his experiences. Though he rarely spoke about the war in public until the 1980s, those who knew him understood that what he had been through had shaped him deeply, and that his quiet strength was a testament to extraordinary endurance.`,
     events: [
       { year: 'Post-1945', title: 'Return to Civilian Life', text: 'Settled back in New South Wales, George returned to work and family life' },

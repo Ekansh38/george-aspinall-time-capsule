@@ -251,47 +251,6 @@ export const RailwayMapSVG = () => (
   </svg>
 )
 
-export const MessTinSVG = () => (
-  <svg width="105" height="75" viewBox="0 0 105 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="tin" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stopColor="#9a9a90" />
-        <stop offset="30%" stopColor="#707068" />
-        <stop offset="70%" stopColor="#888878" />
-        <stop offset="100%" stopColor="#606058" />
-      </linearGradient>
-      <linearGradient id="tinLid" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stopColor="#aaa8a0" />
-        <stop offset="100%" stopColor="#787870" />
-      </linearGradient>
-      <filter id="tinShadow">
-        <feDropShadow dx="3" dy="5" stdDeviation="5" floodColor="#000" floodOpacity="0.55" />
-      </filter>
-    </defs>
-    <g filter="url(#tinShadow)">
-      {/* Tin body */}
-      <ellipse cx="52" cy="55" rx="44" ry="14" fill="#505048" />
-      <rect x="8" y="28" width="88" height="28" fill="url(#tin)" />
-      {/* Dents and wear */}
-      <ellipse cx="30" cy="38" rx="6" ry="3" fill="none" stroke="#606058" strokeWidth="1" opacity="0.5" />
-      <ellipse cx="70" cy="44" rx="4" ry="2" fill="none" stroke="#606058" strokeWidth="1" opacity="0.4" />
-      {/* Lid */}
-      <ellipse cx="52" cy="28" rx="44" ry="13" fill="url(#tinLid)" />
-      {/* Lid rim detail */}
-      <ellipse cx="52" cy="28" rx="44" ry="13" fill="none" stroke="#888880" strokeWidth="1.5" />
-      <ellipse cx="52" cy="28" rx="38" ry="10" fill="none" stroke="#909088" strokeWidth="0.5" opacity="0.5" />
-      {/* Handle */}
-      <path d="M52 8 C40 8, 34 14, 34 20" stroke="#808078" strokeWidth="5" fill="none" strokeLinecap="round" />
-      <path d="M52 8 C64 8, 70 14, 70 20" stroke="#808078" strokeWidth="5" fill="none" strokeLinecap="round" />
-      <rect x="44" y="5" width="16" height="5" rx="2.5" fill="#909088" />
-      {/* Scratches */}
-      <line x1="20" y1="30" x2="28" y2="34" stroke="#aaa8a0" strokeWidth="0.5" opacity="0.5" />
-      <line x1="60" y1="35" x2="72" y2="32" stroke="#aaa8a0" strokeWidth="0.5" opacity="0.4" />
-      {/* Engraving */}
-      <text x="52" y="50" textAnchor="middle" fontFamily="monospace" fontSize="5" fill="#5a5850" opacity="0.8" letterSpacing="1">G.ASPINALL</text>
-    </g>
-  </svg>
-)
 
 export const EnlistmentSVG = () => (
   <svg width="85" height="115" viewBox="0 0 85 115" fill="none" xmlns="http://www.w3.org/2000/svg">
