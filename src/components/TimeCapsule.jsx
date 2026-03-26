@@ -142,7 +142,7 @@ export default function TimeCapsule() {
             fontFamily: 'Crimson Text, serif', fontStyle: 'italic',
             fontSize: '0.78rem', color: '#6a5540', letterSpacing: '0.08em',
           }}>
-            Hover the artefacts — click to enter each chapter
+            Hover the artefacts and click to enter each chapter
           </p>
         </div>
         <div style={{ width: '60px' }} />

@@ -233,7 +233,7 @@ export default function Landing() {
             marginBottom: '0.75rem',
           }}
         >
-          1921 — 2010
+          1917 to 2010
         </div>
 
         {/* Subtitle */}

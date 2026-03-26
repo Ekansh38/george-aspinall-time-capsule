@@ -252,7 +252,7 @@ export default function ArtifactPage() {
           letterSpacing: '0.25em',
           color: '#4a3a28',
         }}>
-          GEORGE ASPINALL — A DIGITAL TIME CAPSULE
+          GEORGE ASPINALL: A DIGITAL TIME CAPSULE
         </p>
       </div>
     </motion.div>

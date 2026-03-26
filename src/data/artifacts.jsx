@@ -27,7 +27,7 @@ export const DogTagsSVG = () => (
       <path d="M40 76 L34 84 L46 84 Z" fill="url(#metal1)" />
       <rect x="12" y="35" width="56" height="1.5" rx="1" fill="#888" opacity="0.4" />
       <text x="40" y="50" textAnchor="middle" fontFamily="monospace" fontSize="6.5" fill="#666" fontWeight="bold">ASPINALL  G</text>
-      <text x="40" y="60" textAnchor="middle" fontFamily="monospace" fontSize="5.5" fill="#777">NX 12345  AIF</text>
+      <text x="40" y="60" textAnchor="middle" fontFamily="monospace" fontSize="5.5" fill="#777">NX37745  AIF</text>
       <text x="40" y="69" textAnchor="middle" fontFamily="monospace" fontSize="5" fill="#777">C OF E</text>
     </g>
     {/* Front tag */}
@@ -38,7 +38,7 @@ export const DogTagsSVG = () => (
       <rect x="10" y="42" width="56" height="1.5" rx="1" fill="#999" opacity="0.3" />
       <rect x="10" y="80" width="56" height="1.5" rx="1" fill="#888" opacity="0.3" />
       <text x="38" y="58" textAnchor="middle" fontFamily="monospace" fontSize="6.5" fill="#666" fontWeight="bold">ASPINALL  G</text>
-      <text x="38" y="68" textAnchor="middle" fontFamily="monospace" fontSize="5.5" fill="#777">NX 12345  AIF</text>
+      <text x="38" y="68" textAnchor="middle" fontFamily="monospace" fontSize="5.5" fill="#777">NX37745  AIF</text>
       <text x="38" y="77" textAnchor="middle" fontFamily="monospace" fontSize="5" fill="#777">C OF E</text>
     </g>
   </svg>
@@ -324,11 +324,11 @@ export const EnlistmentSVG = () => (
       <text x="10" y="46" fontFamily="sans-serif" fontSize="4" fill="#6a4a20" opacity="0.8">Name:</text>
       <text x="28" y="46" fontFamily="'Crimson Text', serif" fontSize="5" fill="#3a2010">Aspinall, George</text>
       <text x="10" y="55" fontFamily="sans-serif" fontSize="4" fill="#6a4a20" opacity="0.8">Date of Birth:</text>
-      <text x="38" y="55" fontFamily="'Crimson Text', serif" fontSize="5" fill="#3a2010">1921</text>
+      <text x="38" y="55" fontFamily="'Crimson Text', serif" fontSize="5" fill="#3a2010">1917</text>
       <text x="10" y="64" fontFamily="sans-serif" fontSize="4" fill="#6a4a20" opacity="0.8">Birthplace:</text>
-      <text x="33" y="64" fontFamily="'Crimson Text', serif" fontSize="5" fill="#3a2010">Wagga Wagga, NSW</text>
+      <text x="33" y="64" fontFamily="'Crimson Text', serif" fontSize="5" fill="#3a2010">Old Junee, NSW</text>
       <text x="10" y="73" fontFamily="sans-serif" fontSize="4" fill="#6a4a20" opacity="0.8">Trade:</text>
-      <text x="26" y="73" fontFamily="'Crimson Text', serif" fontSize="5" fill="#3a2010">Signaller</text>
+      <text x="26" y="73" fontFamily="'Crimson Text', serif" fontSize="5" fill="#3a2010">Motor Mechanic</text>
       {/* Signature area */}
       <line x1="10" y1="95" x2="55" y2="95" stroke="#8a6030" strokeWidth="0.8" />
       <text x="10" y="100" fontFamily="sans-serif" fontSize="4" fill="#6a4a20" opacity="0.7">Signature of Recruit</text>
@@ -337,9 +337,9 @@ export const EnlistmentSVG = () => (
       {/* Stamp */}
       <circle cx="62" cy="90" r="11" fill="none" stroke="#1a3a6a" strokeWidth="1.5" opacity="0.4" />
       <text x="62" y="88" textAnchor="middle" fontFamily="monospace" fontSize="3.5" fill="#1a3a6a" opacity="0.4" letterSpacing="0.5">ENLISTED</text>
-      <text x="62" y="93" textAnchor="middle" fontFamily="monospace" fontSize="3.5" fill="#1a3a6a" opacity="0.4">1940</text>
+      <text x="62" y="93" textAnchor="middle" fontFamily="monospace" fontSize="3.5" fill="#1a3a6a" opacity="0.4">1941</text>
       {/* Condition date */}
-      <text x="10" y="108" fontFamily="sans-serif" fontSize="4" fill="#6a4a20" opacity="0.6">No. NX 12345 — 2/10th Field Regt AIF</text>
+      <text x="10" y="108" fontFamily="sans-serif" fontSize="4" fill="#6a4a20" opacity="0.6">No. NX37745  2/30th Inf Bn AIF</text>
     </g>
   </svg>
 )
@@ -397,7 +397,7 @@ export const artifacts = [
     chapter: 'changi',
     pageChapter: 'changi',
     description: "George's Army identification tags, worn throughout captivity",
-    body: `Every Australian soldier was issued metal identification tags when they enlisted. George's tags were stamped with his name, service number NX 12345, unit, and religion — "C OF E" for Church of England. He wore them around his neck throughout his entire time as a prisoner of war.\n\nEven in the worst conditions of captivity — through hunger, disease, and forced labour — these tags were one of the few personal objects he managed to keep. They were a reminder of who he was when nearly everything else had been taken away from him.`,
+    body: `Every Australian soldier was issued metal identification tags when they enlisted. George's tags were stamped with his name, service number NX37745, unit, and religion, listed as "C OF E" for Church of England. He wore them around his neck throughout his entire time as a prisoner of war.\n\nEven in the worst conditions of captivity, through hunger, disease, and forced labour, these tags were one of the few personal objects he managed to keep. They were a reminder of who he was when nearly everything else had been taken away from him.`,
     position: { x: 14, y: 20 },
     rotation: -18,
     SVG: DogTagsSVG,
@@ -409,7 +409,7 @@ export const artifacts = [
     chapter: 'railway',
     pageChapter: 'railway',
     description: 'The hidden camera George used to document the Death Railway',
-    body: `Taking photographs was strictly forbidden by the Japanese guards — anyone caught could be executed on the spot. George concealed his small Kodak Brownie inside a hollowed-out water bottle and a bamboo container, smuggling it through countless searches and checkpoints along the Death Railway.\n\nThe fact that he kept it hidden for years, despite constant danger, shows just how determined he was to make sure the world would one day see the truth of what happened there. The camera was his most precious and most dangerous possession.`,
+    body: `Taking photographs was strictly forbidden by the Japanese guards. Anyone caught could be executed on the spot. George concealed his small Kodak Brownie inside a hollowed-out water bottle and a bamboo container, smuggling it through countless searches and checkpoints along the Death Railway.\n\nThe fact that he kept it hidden for years, despite constant danger, shows just how determined he was to make sure the world would one day see the truth of what happened there. The camera was his most precious and most dangerous possession.`,
     position: { x: 60, y: 12 },
     rotation: 8,
     SVG: CameraSVG,
@@ -421,7 +421,7 @@ export const artifacts = [
     chapter: 'railway',
     pageChapter: 'railway',
     description: 'Over 200 forbidden photographs taken at enormous personal risk',
-    body: `Over the course of his captivity, George took more than 200 secret photographs documenting life on the Burma-Thailand Death Railway. He captured prisoners working in brutal conditions, sick and dying men, makeshift jungle camps, and the railway being built by hand under Japanese supervision.\n\nEach photograph was taken at enormous personal risk — if a guard had spotted him, he almost certainly would have been killed. George hid the developed photographs and negatives throughout the war, protecting them through searches, flooding, and disease. They became one of the most important visual records of the prisoner-of-war experience in World War II.`,
+    body: `Over the course of his captivity, George took more than 200 secret photographs documenting life on the Burma-Thailand Death Railway. He captured prisoners working in brutal conditions, sick and dying men, makeshift jungle camps, and the railway being built by hand under Japanese supervision.\n\nEach photograph was taken at enormous personal risk. If a guard had spotted him, he almost certainly would have been killed. George hid the developed photographs and negatives throughout the war, protecting them through searches, flooding, and disease. They became one of the most important visual records of the prisoner-of-war experience in World War II.`,
     position: { x: 38, y: 42 },
     rotation: -5,
     SVG: PhotographsSVG,
@@ -433,7 +433,7 @@ export const artifacts = [
     chapter: 'changi',
     pageChapter: 'family',
     description: 'A censored letter to his family from Changi Prison',
-    body: `Prisoners at Changi were occasionally allowed to send short letters home, but every word was read and often cut out by Japanese censors. George could not say where he was, how bad things really were, or anything that might be considered military information. Letters that passed inspection were stamped "PASSED CENSOR" before being sent.\n\nFor George's family back in Wagga Wagga, each letter that arrived was a relief — at least they knew he was still alive. Reading between the carefully chosen words, they would have understood that he couldn't tell them the whole truth about what he was going through.`,
+    body: `Prisoners at Changi were occasionally allowed to send short letters home, but every word was read and often cut out by Japanese censors. George could not say where he was, how bad things really were, or anything that might be considered military information. Letters that passed inspection were stamped "PASSED CENSOR" before being sent.\n\nFor George's family back in Parramatta, each letter that arrived was a relief. At least they knew he was still alive. Reading between the carefully chosen words, they would have understood that he couldn't tell them the whole truth about what he was going through.`,
     position: { x: 72, y: 55 },
     rotation: 14,
     SVG: LetterSVG,
@@ -445,7 +445,7 @@ export const artifacts = [
     chapter: 'railway',
     pageChapter: 'railway',
     description: 'A hand-drawn map of the 415km Burma-Thailand Death Railway',
-    body: `The Burma-Thailand Death Railway stretched 415 kilometres through dense jungle and mountain terrain between Bangkok, Thailand, and Rangoon, Burma. It was built between 1942 and 1943 by around 60,000 Allied prisoners of war — including Australians, British, and Dutch soldiers — alongside more than 200,000 Asian labourers forced into service by the Japanese.\n\nConditions were horrific. Prisoners worked up to 18-hour days with almost no food, tools, or medicine. Over 100,000 workers died during construction, including more than 12,000 Allied POWs. The railway was completed in October 1943 — a staggering human cost for a single military supply line.`,
+    body: `The Burma-Thailand Death Railway stretched 415 kilometres through dense jungle and mountain terrain between Bangkok, Thailand, and Rangoon, Burma. It was built between 1942 and 1943 by around 60,000 Allied prisoners of war, including Australians, British, and Dutch soldiers, alongside more than 200,000 Asian labourers forced into service by the Japanese.\n\nConditions were horrific. Prisoners worked up to 18-hour days with almost no food, tools, or medicine. Over 100,000 workers died during construction, including more than 12,000 Allied POWs. The railway was completed in October 1943, a staggering human cost for a single military supply line.`,
     position: { x: 22, y: 58 },
     rotation: 6,
     SVG: RailwayMapSVG,
@@ -457,8 +457,8 @@ export const artifacts = [
     label: 'Enlistment Papers',
     chapter: 'enlistment',
     pageChapter: 'enlistment',
-    description: 'The attestation paper George signed to join the 2nd AIF in 1940',
-    body: `In 1940, at just 19 years old, George Aspinall signed up to join the 2nd Australian Imperial Force. He enlisted as a Signaller in the 2/10th Field Regiment — Signallers were responsible for sending and receiving military communications. Thousands of young Australians volunteered around the same time, driven by a sense of duty and patriotism.\n\nThe attestation paper George signed was an official military document recording his name, age, birthplace, trade, and religion. When he put his signature on that form in Wagga Wagga, he could not have imagined that he was about to be sent into one of the most devastating campaigns of the entire war.`,
+    description: 'The attestation paper George signed to join the 2nd AIF in 1941',
+    body: `In 1941, at 23 years old, George Aspinall signed up to join the 2nd Australian Imperial Force. He enlisted as a Motor Mechanic and joined the 2nd/30th Infantry Battalion. Thousands of young Australians volunteered around the same time, driven by a sense of duty and patriotism.\n\nThe attestation paper George signed was an official military document recording his name, age, birthplace, trade, and religion. When he put his signature on that form in Paddington, he could not have imagined that he was about to be sent into one of the most devastating campaigns of the entire war.`,
     position: { x: 8, y: 42 },
     rotation: 10,
     SVG: EnlistmentSVG,
@@ -470,7 +470,7 @@ export const artifacts = [
     chapter: 'changi',
     pageChapter: 'changi',
     description: 'The Straits Times front page, February 16, 1942',
-    body: `On 15 February 1942, British General Arthur Percival surrendered Singapore to Japanese General Tomoyuki Yamashita. It was the largest surrender of British-led forces in history — around 130,000 Allied troops, including approximately 15,000 Australians, became prisoners of war in a single day.\n\nThe fall of Singapore was a massive shock to Australia, which had long relied on Britain to protect the region. Prime Minister John Curtin called it "Australia's darkest hour." For George and his fellow soldiers, this newspaper headline marked the moment everything changed — the beginning of years of brutal captivity that none of them had been prepared for.`,
+    body: `On 15 February 1942, British General Arthur Percival surrendered Singapore to Japanese General Tomoyuki Yamashita. It was the largest surrender of British-led forces in history. Around 130,000 Allied troops, including approximately 15,000 Australians, became prisoners of war in a single day.\n\nThe fall of Singapore was a massive shock to Australia, which had long relied on Britain to protect the region. Prime Minister John Curtin called it "Australia's darkest hour." For George and his fellow soldiers, this newspaper headline marked the moment everything changed, the beginning of years of brutal captivity that none of them had been prepared for.`,
     position: { x: 76, y: 22 },
     rotation: -12,
     SVG: NewspaperSVG,
