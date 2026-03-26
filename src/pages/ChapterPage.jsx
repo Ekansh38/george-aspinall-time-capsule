@@ -311,16 +311,29 @@ export default function ChapterPage() {
           }}>
             {chapter.quote}
           </p>
-          <p style={{
-            marginTop: '1rem',
-            fontFamily: 'Cinzel, serif',
-            fontSize: '0.65rem',
-            letterSpacing: '0.2em',
-            color: accentColor,
-            opacity: 0.7,
-          }}>
-            {chapter.quoteSource}
-          </p>
+          <div style={{ marginTop: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
+            <p style={{
+              fontFamily: 'Cinzel, serif',
+              fontSize: '0.65rem',
+              letterSpacing: '0.2em',
+              color: accentColor,
+              opacity: 0.7,
+              margin: 0,
+            }}>
+              {chapter.quoteSource}
+            </p>
+            {chapter.quoteFictional && (
+              <span style={{
+                fontFamily: 'Crimson Text, serif',
+                fontStyle: 'italic',
+                fontSize: '0.75rem',
+                color: '#5a4a38',
+                opacity: 0.8,
+              }}>
+                dramatised
+              </span>
+            )}
+          </div>
         </div>
       </motion.div>
 
