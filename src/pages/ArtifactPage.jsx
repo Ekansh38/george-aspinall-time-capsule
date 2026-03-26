@@ -46,7 +46,7 @@ export default function ArtifactPage() {
     )
   }
 
-  const { label, description, body, SVG, pageChapter, size } = artifact
+  const { label, description, body, SVG, pageChapter, size, letters, letterAnalysis } = artifact
   const accentColor = chapterColors[pageChapter] || '#c8933d'
   const chapter = chapters[pageChapter]
 
@@ -235,6 +235,172 @@ export default function ArtifactPage() {
               {para}
             </p>
           ))}
+
+          {/* Letters section */}
+          {letters && (
+            <>
+              <div style={{
+                height: '1px',
+                background: `linear-gradient(90deg, transparent, ${accentColor}44, transparent)`,
+                margin: 'clamp(2.5rem, 5vw, 4rem) 0',
+              }} />
+
+              <div style={{
+                fontFamily: 'Cinzel, serif',
+                fontSize: '0.6rem',
+                letterSpacing: '0.35em',
+                color: accentColor,
+                marginBottom: '2.5rem',
+                textTransform: 'uppercase',
+              }}>
+                The Correspondence
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
+                {letters.map((letter, i) => (
+                  <div key={i} style={{
+                    position: 'relative',
+                    background: 'linear-gradient(135deg, #1a120a 0%, #120d07 100%)',
+                    border: `1px solid ${accentColor}22`,
+                    borderRadius: '4px',
+                    padding: 'clamp(1.5rem, 4vw, 2.5rem)',
+                    boxShadow: `inset 0 0 40px rgba(0,0,0,0.4), 0 8px 32px rgba(0,0,0,0.5)`,
+                  }}>
+
+                    {/* Location + date header */}
+                    <div style={{
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      flexWrap: 'wrap',
+                      gap: '0.5rem',
+                      marginBottom: '1.5rem',
+                      paddingBottom: '1rem',
+                      borderBottom: `1px solid ${accentColor}20`,
+                    }}>
+                      <span style={{
+                        fontFamily: 'Playfair Display, serif',
+                        fontStyle: 'italic',
+                        fontSize: '0.9rem',
+                        color: '#8a7050',
+                      }}>
+                        {letter.location}
+                      </span>
+                      <span style={{
+                        fontFamily: 'Playfair Display, serif',
+                        fontStyle: 'italic',
+                        fontSize: '0.9rem',
+                        color: '#8a7050',
+                      }}>
+                        {letter.date}
+                      </span>
+                    </div>
+
+                    {/* Salutation */}
+                    {letter.salutation && (
+                      <p style={{
+                        fontFamily: 'Crimson Text, serif',
+                        fontStyle: 'italic',
+                        fontSize: 'clamp(1rem, 2vw, 1.15rem)',
+                        color: '#c4b090',
+                        marginBottom: '1.2rem',
+                      }}>
+                        {letter.salutation}
+                      </p>
+                    )}
+
+                    {/* Body */}
+                    {letter.body.split('\n\n').map((para, j) => (
+                      <p key={j} style={{
+                        fontFamily: 'Crimson Text, serif',
+                        fontSize: 'clamp(1rem, 2vw, 1.15rem)',
+                        lineHeight: 1.9,
+                        color: '#b8a880',
+                        marginBottom: '1rem',
+                      }}>
+                        {para}
+                      </p>
+                    ))}
+
+                    {/* Closing */}
+                    <p style={{
+                      fontFamily: 'Crimson Text, serif',
+                      fontStyle: 'italic',
+                      fontSize: 'clamp(1rem, 2vw, 1.15rem)',
+                      color: '#c4b090',
+                      marginTop: '1.5rem',
+                      marginBottom: letter.signature ? '0.3rem' : 0,
+                    }}>
+                      {letter.closing}
+                    </p>
+                    {letter.signature && (
+                      <p style={{
+                        fontFamily: 'Crimson Text, serif',
+                        fontStyle: 'italic',
+                        fontSize: 'clamp(1.1rem, 2vw, 1.25rem)',
+                        color: '#c4b090',
+                      }}>
+                        {letter.signature}
+                      </p>
+                    )}
+
+                    {/* Censor stamp */}
+                    {letter.censored && (
+                      <div style={{
+                        position: 'absolute',
+                        bottom: '1.5rem',
+                        right: '1.8rem',
+                        width: '72px',
+                        height: '72px',
+                        borderRadius: '50%',
+                        border: '2px solid #8b2020',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        opacity: 0.35,
+                        transform: 'rotate(-12deg)',
+                      }}>
+                        <span style={{ fontFamily: 'monospace', fontSize: '0.45rem', letterSpacing: '0.1em', color: '#8b2020' }}>PASSED</span>
+                        <span style={{ fontFamily: 'monospace', fontSize: '0.45rem', letterSpacing: '0.1em', color: '#8b2020' }}>CENSOR</span>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {/* Analysis */}
+              {letterAnalysis && (
+                <>
+                  <div style={{
+                    height: '1px',
+                    background: `linear-gradient(90deg, transparent, ${accentColor}30, transparent)`,
+                    margin: 'clamp(2.5rem, 5vw, 4rem) 0 2rem',
+                  }} />
+                  <div style={{
+                    fontFamily: 'Cinzel, serif',
+                    fontSize: '0.6rem',
+                    letterSpacing: '0.35em',
+                    color: accentColor,
+                    marginBottom: '1.2rem',
+                    textTransform: 'uppercase',
+                  }}>
+                    A Hidden Message
+                  </div>
+                  <p style={{
+                    fontFamily: 'Crimson Text, serif',
+                    fontSize: 'clamp(1.05rem, 2vw, 1.2rem)',
+                    lineHeight: 1.85,
+                    color: '#c4b090',
+                    fontStyle: 'italic',
+                    borderLeft: `2px solid ${accentColor}44`,
+                    paddingLeft: '1.5rem',
+                  }}>
+                    {letterAnalysis}
+                  </p>
+                </>
+              )}
+            </>
+          )}
         </div>
       </div>
 
