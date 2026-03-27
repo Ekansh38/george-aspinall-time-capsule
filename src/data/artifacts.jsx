@@ -395,6 +395,11 @@ export const artifacts = [
     pageChapter: 'family',
     description: 'A censored letter to his family from Changi Prison',
     body: `Prisoners at Changi were occasionally allowed to send short letters home, but every word was read and often cut out by Japanese censors. George could not say where he was, how bad things really were, or anything that might be considered military information. Letters that passed inspection were stamped "PASSED CENSOR" before being sent.\n\nFor George's family back in Parramatta, each letter that arrived was a relief. At least they knew he was still alive. Reading between the carefully chosen words, they would have understood that he couldn't tell them the whole truth about what he was going through.`,
+    scans: [
+      { src: '/letter-mum-p1.jpg', label: "Mum's Letter — Page 1" },
+      { src: '/letter-mum-p2.jpg', label: "Mum's Letter — Page 2" },
+      { src: '/letter-george.jpg', label: "George's Reply" },
+    ],
     letters: [
       {
         from: 'Mum',

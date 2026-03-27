@@ -46,7 +46,7 @@ export default function ArtifactPage() {
     )
   }
 
-  const { label, description, body, SVG, pageChapter, size, letters, letterAnalysis, notCreated } = artifact
+  const { label, description, body, SVG, pageChapter, size, letters, letterAnalysis, notCreated, scans } = artifact
   const accentColor = chapterColors[pageChapter] || '#c8933d'
   const chapter = chapters[pageChapter]
 
@@ -274,6 +274,58 @@ export default function ArtifactPage() {
               }}>
                 The Correspondence
               </div>
+
+              {/* Scanned letter images */}
+              {scans && (
+                <>
+                  <div style={{
+                    fontFamily: 'Cinzel, serif',
+                    fontSize: '0.55rem',
+                    letterSpacing: '0.25em',
+                    color: '#6a5a40',
+                    marginBottom: '1.2rem',
+                    textTransform: 'uppercase',
+                  }}>
+                    Original Documents
+                  </div>
+                  <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+                    gap: '1.2rem',
+                    marginBottom: '3rem',
+                  }}>
+                    {scans.map((scan, i) => (
+                      <div key={i} style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                        <a href={scan.src} target="_blank" rel="noreferrer">
+                          <img
+                            src={scan.src}
+                            alt={scan.label}
+                            style={{
+                              width: '100%',
+                              borderRadius: '3px',
+                              border: `1px solid ${accentColor}25`,
+                              display: 'block',
+                              filter: 'sepia(0.15)',
+                              transition: 'filter 0.2s, border-color 0.2s',
+                            }}
+                            onMouseEnter={e => { e.target.style.filter = 'sepia(0)'; e.target.style.borderColor = `${accentColor}66` }}
+                            onMouseLeave={e => { e.target.style.filter = 'sepia(0.15)'; e.target.style.borderColor = `${accentColor}25` }}
+                          />
+                        </a>
+                        <span style={{
+                          fontFamily: 'Crimson Text, serif',
+                          fontStyle: 'italic',
+                          fontSize: '0.8rem',
+                          color: '#6a5a40',
+                          textAlign: 'center',
+                        }}>
+                          {scan.label}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
                 {letters.map((letter, i) => (
