@@ -49,7 +49,7 @@ export const chapters = {
     accentLight: '#5a9a3a',
     quote: '"I knew if they found the camera, I would be shot. But somebody had to record what was happening to us. These men deserved to be remembered."',
     quoteSource: '— George Aspinall',
-    intro: `Construction of the Burma-Thailand Railway began in September 1942, with the Japanese forcing Allied prisoners to build a supply line through dense jungle. In April 1943, George was sent north with F Force, one of the largest groups of POWs transported to the railway.\n\nAlong the 415-kilometre route, prisoners hacked through dense jungle, built bridges over fast-moving rivers, and cut through limestone hills using nothing but basic hand tools. They worked in extreme heat, often 18 hours a day, with barely any food or medicine. Disease, especially cholera, dysentery, and malaria, swept through the camps and killed thousands.\n\nDespite the constant danger of being caught, George secretly continued photographing everything he witnessed. He had been given a Kodak Brownie camera by his uncle before leaving Australia, and kept it hidden throughout his captivity. By the time the railway was completed in October 1943, more than 12,000 Allied POWs and tens of thousands of Asian labourers had died during its construction.`,
+    intro: `The Burma-Thailand Death Railway was 415 kilometres long in dense jungle and mountain terrain between Bangkok, Thailand, and Rangoon, Burma. The building time was between 1942 and 1943. Around 60,000 Allied prisoners of war, including Australians, British, and Dutch soldiers, alongside more than 200,000 Asian labourers forced into service by the Japanese.\n\nConditions were terrible, hence the name. Prisoners worked up to 18-hour days with almost no food, tools, or medicine. Over 100,000 workers died during construction. More than 12,000 Allied POWs. The railway was completed in October 1943.`,
     events: [
       { year: 'Apr 1943', title: 'Transport', text: 'George sent north with F Force to work on the Burma-Thailand Railway' },
       { year: 'Jul 1941', title: 'The Camera', text: 'George\'s uncle gives him a Kodak Brownie as a going-away gift before leaving Australia' },
@@ -57,6 +57,7 @@ export const chapters = {
       { year: 'Oct 1943', title: 'Completion', text: 'Railway completed at a cost of 100,000+ labourers and 12,000 Allied POW lives' },
       { year: '1944–45', title: 'Survival', text: 'George survives cholera, beatings, and near-starvation while protecting his photographs' },
     ],
+    image: '/burma.jpeg',
     imageCaption: 'POW labourers on the Burma-Thailand Railway, photographed covertly by George Aspinall',
   },
 
@@ -70,7 +71,7 @@ export const chapters = {
     quote: '"These photographs must never be forgotten. The men who built that railway must never be forgotten."',
     quoteSource: '— George Aspinall',
     quoteFictional: true,
-    intro: `When Japan surrendered in August 1945, George Aspinall was finally free. He returned to Australia carrying his hidden photographs, a collection of around 100 images he had taken as a prisoner of war. For nearly four decades, George kept the photographs private. The memories were too painful, and the world was still recovering from the war.\n\nIt wasn't until 1984 that the photographs were published in a book called "Changi Photographer." For the first time, the wider public could see what George had risked his life to record. The images shocked many Australians who had not known the full extent of what prisoners had endured. George became recognised as an important historical witness, a man who had not only survived the Death Railway, but preserved its story for future generations.\n\nGeorge Aspinall passed away on 26 October 1991. His photographs remain one of the most significant visual records of the prisoner-of-war experience in the Pacific War.`,
+    intro: `When Japan surrendered in August 1945. George Aspinall was finally free. He returned to Australia carrying his hidden photographs. Around 100 images he had taken as a POW. For nearly 40 years, he kept the photographs private and to himself. The memories were too painful.\n\nIt wasn't until 1984 that the photographs were published in a book called "Changi Photographer." For the first time, everybody could see those images that George risked his life to capture. The images suprised everybody because they didn't know how bad the conditions where.\n\nGeorge Aspinall passed away on 26 October 1991. His photographs remain one of the most significant visual records of the prisoner-of-war experience in the Pacific War.`,
     events: [
       { year: 'Oct 1945', title: 'Return', text: 'George arrives back in Australia on 9 October 1945 aboard the SS Esperance Bay' },
       { year: '1945 to 1984', title: 'Silence', text: 'For nearly four decades, the photographs remain private. The trauma was too raw to share' },
@@ -78,6 +79,7 @@ export const chapters = {
       { year: '26 Oct 1991', title: 'Passing', text: 'George Aspinall passed away in Sydney. His photographs preserved as a permanent record' },
     ],
     imageCaption: 'George Aspinall, the man who risked his life to record history',
+    // no image for legacy section
   },
 
   family: {
