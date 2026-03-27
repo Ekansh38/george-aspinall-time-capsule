@@ -395,8 +395,8 @@ export default function ChapterPage() {
           ))}
         </div>
 
-        {/* Image caption area */}
-        <div style={{
+        {/* Image caption area — only shown when image exists */}
+        {chapter.image && <div style={{
           marginTop: '2rem',
           padding: '1.5rem',
           border: `1px solid ${accentColor}22`,
@@ -471,7 +471,7 @@ export default function ChapterPage() {
               {chapter.imageDisclaimer}
             </div>
           )}
-        </div>
+        </div>}
       </div>
 
       {/* Chapter navigation */}

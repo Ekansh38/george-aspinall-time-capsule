@@ -9,7 +9,7 @@ export const chapters = {
     quote: '"He was just a young bloke from Parramatta who signed up to serve his country, not knowing what lay ahead."',
     quoteSource: '— Bill Hawthorn, fellow soldier, 2nd/30th Battalion',
     quoteFictional: true,
-    intro: `George Aspinall was born in 1923 in Old Junee, a town in New South Wales. Australia. Like lots of young Australians of his generation, he grew up during the Great Depression, a time when jobs were hard to get and life was hard. When World War II broke out in 1939, Australia quickly joined the fight alongside Britain.\n\nGeorge enlisted in the 2nd Australian Imperial Force in 1941 at the age of 17. He joined the 2nd/30th Infantry Battalion as a Motor Mechanic. He boarded a troopship and left Australia, not knowing when he would return, or if he ever would. He was heading to Malaya.`,
+    intro: `George Aspinall was born in 1923. He grew up in Old Junee, New South Wales. It was a tough time to grow up. Jobs were rare. Money was tight. This was the Great Depression. When WW2 started in 1939, Australia joined in alongside Britain pretty quickly.\n\nGeorge was only 17 when he signed up. He joined the 2nd Australian Imperial Force in 1941. His role was Motor Mechanic in the 2nd/30th Infantry Battalion. He got on a troopship and left. He didn't know when he'd be back. Or if he would be. He was headed to Malaya.`,
     events: [
       { year: '1923', title: 'Born', text: 'George Aspinall born in Old Junee, New South Wales' },
       { year: 'Jul 1941', title: 'Enlistment', text: 'Enlisted in the 2nd/30th Infantry Battalion, Australian Imperial Force, age 17' },
@@ -30,7 +30,7 @@ export const chapters = {
     quote: '"On 15 February 1942, 130,000 Allied troops surrendered. It was the largest capitulation in British military history. We became prisoners."',
     quoteSource: '— George Aspinall',
     quoteFictional: true,
-    intro: `On 8 February 1942. Japanese forces crossed the Johor Strait and attacked and invaded into Singapore Island. After just a week of fighting. The situation became hard for the Allied defenders. On 15 February, General Arthur Percival surrendered and around 80,000 Allied troops in Singapore became prisoners of war overnight. This was the largest capture in British military history.\n\nGeorge and thousands of Australian soldiers were forced to march to Changi. Food was limted and hard to get, disease spread very rapidly, and people had no idea what would happen to them next. George held onto his Kodak Brownie camera and began secretly photographing life in the camp, despite the Japanese strictly forbidding any photography.`,
+    intro: `On 8 February 1942 the Japanese crossed the Johor Strait. They pushed into Singapore fast. Within a week it was basically over. General Percival surrendered on the 15th of February. About 80,000 Allied troops became POWs overnight. It was one of the biggest captures in British history.\n\nGeorge and thousands of Australians had to march to Changi. Food was almost nothing. Disease spread fast. Nobody knew what was coming next. George kept his camera hidden and started taking secret photos even though the Japanese had banned it completely.`,
     events: [
       { year: 'Feb 8, 1942', title: 'Invasion', text: 'Japanese forces landed on Singapore Island under General Tomoyuki Yamashita' },
       { year: 'Feb 15, 1942', title: 'Surrender', text: 'General Percival surrenders Singapore. Around 80,000 Allied troops taken prisoner' },
@@ -49,7 +49,7 @@ export const chapters = {
     accentLight: '#5a9a3a',
     quote: '"I knew if they found the camera, I would be shot. But somebody had to record what was happening to us. These men deserved to be remembered."',
     quoteSource: '— George Aspinall',
-    intro: `The Burma-Thailand Death Railway was 415 kilometres long in dense jungle and mountain terrain between Bangkok, Thailand, and Rangoon, Burma. The building time was between 1942 and 1943. Around 60,000 Allied prisoners of war, including Australians, British, and Dutch soldiers, alongside more than 200,000 Asian labourers forced into service by the Japanese.\n\nConditions were terrible, hence the name. Prisoners worked up to 18-hour days with almost no food, tools, or medicine. Over 100,000 workers died during construction. More than 12,000 Allied POWs. The railway was completed in October 1943.`,
+    intro: `The Death Railway was 415km long. It went through thick jungle between Bangkok and Rangoon. It was built between 1942 and 1943. Around 60,000 Allied POWs were forced to build it. Australians, British, Dutch. Plus over 200,000 Asian labourers the Japanese forced into it too.\n\nIt was brutal. People worked up to 18 hours a day. Barely any food. No medicine. Over 100,000 people died building it. More than 12,000 were Allied POWs. It was done by October 1943.`,
     events: [
       { year: 'Apr 1943', title: 'Transport', text: 'George sent north with F Force to work on the Burma-Thailand Railway' },
       { year: 'Jul 1941', title: 'The Camera', text: 'George\'s uncle gives him a Kodak Brownie as a going-away gift before leaving Australia' },
@@ -71,7 +71,7 @@ export const chapters = {
     quote: '"These photographs must never be forgotten. The men who built that railway must never be forgotten."',
     quoteSource: '— George Aspinall',
     quoteFictional: true,
-    intro: `When Japan surrendered in August 1945. George Aspinall was finally free. He returned to Australia carrying his hidden photographs. Around 100 images he had taken as a POW. For nearly 40 years, he kept the photographs private and to himself. The memories were too painful.\n\nIt wasn't until 1984 that the photographs were published in a book called "Changi Photographer." For the first time, everybody could see those images that George risked his life to capture. The images suprised everybody because they didn't know how bad the conditions where.\n\nGeorge Aspinall passed away on 26 October 1991. His photographs remain one of the most significant visual records of the prisoner-of-war experience in the Pacific War.`,
+    intro: `Japan surrendered in August 1945. George was free. He came back to Australia with about 100 hidden photos he took as a POW. He kept them to himself for nearly 40 years. Too painful to share.\n\nIn 1984 a book came out called "Changi Photographer." That was the first time people got to see what George had captured. People were shocked. Most Australians had no idea how bad it actually was.\n\nGeorge passed away on 26 October 1991. His photos are still one of the most important records of what POWs went through in the Pacific War.`,
     events: [
       { year: 'Oct 1945', title: 'Return', text: 'George arrives back in Australia on 9 October 1945 aboard the SS Esperance Bay' },
       { year: '1945 to 1984', title: 'Silence', text: 'For nearly four decades, the photographs remain private. The trauma was too raw to share' },
