@@ -422,7 +422,7 @@ export const artifacts = [
         censored: true,
       },
     ],
-    letterAnalysis: `Read closely, George's reply says more than it seems. The line "it would be worth keeping some kind of record of them for later" is a quiet hint at what he was actually doing. He was already photographing everything around him, at enormous personal risk. "Memory might have to do" was written for the censor's eyes, suggesting he had no real way to document what he saw. In reality, he had his camera hidden on his body the whole time. He could not say so directly, but the hint is there for anyone who knew him.`,
+    letterAnalysis: `If you read George's reply carefully, you will realise it says more than you might think. The line "it would be worth keeping some kind of record of them for later" is a small little hint at what he was doing. He was already photographing everything around him. This was a big risk that he took. "Memory might have to do" was written for the censor's eyes.`,
     position: { x: 72, y: 55 },
     rotation: 14,
     SVG: LetterSVG,
