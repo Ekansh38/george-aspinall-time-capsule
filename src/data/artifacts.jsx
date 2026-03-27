@@ -179,8 +179,8 @@ export const LetterSVG = () => (
       <line x1="4" y1="29" x2="91" y2="29" stroke="#c4a870" strokeWidth="0.5" strokeDasharray="1 3" opacity="0.6" />
       <line x1="4" y1="52" x2="91" y2="52" stroke="#c4a870" strokeWidth="0.5" strokeDasharray="1 3" opacity="0.6" />
       {/* Header */}
-      <text x="12" y="18" fontFamily="'Playfair Display', serif" fontSize="7" fill="#5a3a10" fontStyle="italic">Changi Barracks, Singapore</text>
-      <text x="62" y="18" fontFamily="'Playfair Display', serif" fontSize="6" fill="#6a4a20">1942</text>
+      <text x="12" y="16" fontFamily="'Playfair Display', serif" fontSize="6.5" fill="#5a3a10" fontStyle="italic">Changi Barracks, Singapore</text>
+      <text x="83" y="23" textAnchor="end" fontFamily="'Playfair Display', serif" fontSize="6" fill="#6a4a20">1942</text>
       <line x1="8" y1="21" x2="87" y2="21" stroke="#b09060" strokeWidth="0.5" opacity="0.7" />
       {/* Body text lines */}
       {[32, 39, 46].map((y, i) => (
@@ -394,7 +394,7 @@ export const artifacts = [
     chapter: 'changi',
     pageChapter: 'family',
     description: 'A censored letter to his family from Changi Prison',
-    body: `Prisoners at Changi were occasionally allowed to send short letters home, but every word was read and often cut out by Japanese censors. George could not say where he was, how bad things really were, or anything that might be considered military information. Letters that passed inspection were stamped "PASSED CENSOR" before being sent.\n\nFor George's family back in Parramatta, each letter that arrived was a relief. At least they knew he was still alive. Reading between the carefully chosen words, they would have understood that he couldn't tell them the whole truth about what he was going through.`,
+    body: `Prisoners at Changi were sometimes allowed to send letters home. But the issue is that the letter was read by Japanese censors. George could not say where he was, how bad things really were, or anything that might be considered military information. Letters that passed inspection were stamped "PASSED CENSOR" before being sent of to the family of the prisoner.\n\nEach letter ment that Georges family knew he was still alive. Reading between the carefully chosen words, they would have understood that he couldn't tell them the whole truth about what he was going through.`,
     scans: [
       { src: '/letter-mum-p1.jpg', label: "Mum's Letter — Page 1" },
       { src: '/letter-mum-p2.jpg', label: "Mum's Letter — Page 2" },
@@ -422,7 +422,7 @@ export const artifacts = [
         censored: true,
       },
     ],
-    letterAnalysis: `If you read George's reply carefully, you will realise it says more than you might think. The line "it would be worth keeping some kind of record of them for later" is a small little hint at what he was doing. He was already photographing everything around him. This was a big risk that he took. "Memory might have to do" was written for the censor's eyes.`,
+    letterAnalysis: `If you read George's reply carefully. you will realise it says more than you might think. The line "it would be worth keeping some kind of record of them for later" is a small little hint. at what he was doing. He was already photographing lots of the things he was seeing. This was a big risk that he took. "Memory might have to do" was written for the censor's eyes.`,
     position: { x: 72, y: 55 },
     rotation: 14,
     SVG: LetterSVG,
