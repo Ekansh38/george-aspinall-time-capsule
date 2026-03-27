@@ -49,7 +49,7 @@ export const chapters = {
     accentLight: '#5a9a3a',
     quote: '"I knew if they found the camera, I would be shot. But somebody had to record what was happening to us. These men deserved to be remembered."',
     quoteSource: '— George Aspinall',
-    intro: `The Death Railway was 415km long. It went through thick jungle between Bangkok and Rangoon. It was built between 1942 and 1943. Around 60,000 Allied POWs were forced to build it. Australians, British, Dutch. Plus over 200,000 Asian labourers the Japanese forced into it too.\n\nIt was brutal. People worked up to 18 hours a day. Barely any food. No medicine. More than 100,000 people died while building it. More than 12,000 were Allied POWs. It was done being built by October 1943.`,
+    intro: `The Death Railway was 415km long. It went through thick jungle between Bangkok and Rangoon. It was built between 1942 and 1943. Around 60,000 Allied POWs were forced to build it. Australians, British, Dutch. Plus over 200,000 Asian labourers the Japanese forced into it too.\n\nIt was brutal. People worked around 18 hours a day. Very little to no food. No medicine causing disease. More than 100,000 people died while building it. More than 12,000 were Allied POWs. It was done being built by October 1943.`,
     events: [
       { year: 'Apr 1943', title: 'Transport', text: 'George sent north with F Force to work on the Burma-Thailand Railway' },
       { year: 'Jul 1941', title: 'The Camera', text: 'George\'s uncle gives him a Kodak Brownie as a going-away gift before leaving Australia' },
