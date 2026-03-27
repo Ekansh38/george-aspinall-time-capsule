@@ -404,51 +404,61 @@ export default function ChapterPage() {
           background: `${accentColor}05`,
           textAlign: 'center',
         }}>
-          {/* Placeholder image box */}
+          {/* Historical image */}
           <div style={{
             width: '100%',
             aspectRatio: '16/9',
-            background: `
-              radial-gradient(ellipse at 50% 40%, ${accentColor}15 0%, transparent 70%),
-              linear-gradient(160deg, #1a1008, #0d0906)
-            `,
             borderRadius: '2px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
             marginBottom: '1rem',
             border: `1px solid ${accentColor}18`,
             position: 'relative',
             overflow: 'hidden',
+            background: `linear-gradient(160deg, #1a1008, #0d0906)`,
           }}>
-            {/* Placeholder grid lines */}
-            <div style={{
-              position: 'absolute', inset: 0,
-              backgroundImage: `
-                linear-gradient(${accentColor}08 1px, transparent 1px),
-                linear-gradient(90deg, ${accentColor}08 1px, transparent 1px)
-              `,
-              backgroundSize: '40px 40px',
-            }} />
-            <div style={{ textAlign: 'center', zIndex: 1 }}>
-              <div style={{
-                fontFamily: 'Cinzel, serif',
-                fontSize: '0.6rem',
-                letterSpacing: '0.25em',
-                color: `${accentColor}60`,
-                marginBottom: '0.5rem',
-              }}>
-                HISTORICAL PHOTOGRAPH
-              </div>
-              <div style={{
-                fontFamily: 'Crimson Text, serif',
-                fontStyle: 'italic',
-                fontSize: '0.85rem',
-                color: `${accentColor}50`,
-              }}>
-                {chapter.imageCaption}
-              </div>
-            </div>
+            {chapter.image ? (
+              <img
+                src={chapter.image}
+                alt={chapter.imageCaption}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  display: 'block',
+                }}
+              />
+            ) : (
+              <>
+                <div style={{
+                  position: 'absolute', inset: 0,
+                  backgroundImage: `
+                    linear-gradient(${accentColor}08 1px, transparent 1px),
+                    linear-gradient(90deg, ${accentColor}08 1px, transparent 1px)
+                  `,
+                  backgroundSize: '40px 40px',
+                }} />
+                <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
+                  <div>
+                    <div style={{
+                      fontFamily: 'Cinzel, serif',
+                      fontSize: '0.6rem',
+                      letterSpacing: '0.25em',
+                      color: `${accentColor}60`,
+                      marginBottom: '0.5rem',
+                    }}>
+                      HISTORICAL PHOTOGRAPH
+                    </div>
+                    <div style={{
+                      fontFamily: 'Crimson Text, serif',
+                      fontStyle: 'italic',
+                      fontSize: '0.85rem',
+                      color: `${accentColor}50`,
+                    }}>
+                      {chapter.imageCaption}
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>

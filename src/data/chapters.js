@@ -7,15 +7,16 @@ export const chapters = {
     accentColor: '#8b7355',
     accentLight: '#c4a87a',
     quote: '"He was just a young bloke from Parramatta who signed up to serve his country, not knowing what lay ahead."',
-    quoteSource: '— George Aspinall',
+    quoteSource: '— Bill Hawthorn, fellow soldier, 2nd/30th Battalion',
     quoteFictional: true,
-    intro: `George Aspinall was born in 1923 in Old Junee, a town in New South Wales. Australia. Like lots of young Australians of his generation, he grew up during the Great Depression, a time when jobs were hard to get and life was hard. When World War II broke out in 1939, Australia quickly joined the fight alongside Britain.\n\nGeorge enlisted in the 2nd Australian Imperial Force in 1941 at the age of 17. He joined the 2nd/30th Infantry Battalion as a Motor Mechanic. He boarded a troopship and left Australia, not knowing when he would return, or if he ever would. He was heading to Malaya, where the British military maintained a large presence and where Australia believed a strong defence was in place. That belief, as history would show, was tragically wrong.`,
+    intro: `George Aspinall was born in 1923 in Old Junee, a town in New South Wales. Australia. Like lots of young Australians of his generation, he grew up during the Great Depression, a time when jobs were hard to get and life was hard. When World War II broke out in 1939, Australia quickly joined the fight alongside Britain.\n\nGeorge enlisted in the 2nd Australian Imperial Force in 1941 at the age of 17. He joined the 2nd/30th Infantry Battalion as a Motor Mechanic. He boarded a troopship and left Australia, not knowing when he would return, or if he ever would. He was heading to Malaya.`,
     events: [
       { year: '1923', title: 'Born', text: 'George Aspinall born in Old Junee, New South Wales' },
       { year: 'Jul 1941', title: 'Enlistment', text: 'Enlisted in the 2nd/30th Infantry Battalion, Australian Imperial Force, age 17' },
       { year: 'Jul 1941', title: 'Departure', text: 'Embarked from Australia on 29 July 1941, aboard the Johan Van Oldenbarnevelt' },
       { year: 'Aug 1941', title: 'Arrival', text: 'Arrived in Singapore in August 1941, then moved north to Malaya' },
     ],
+    image: '/enlistment-troopship.png',
     imageCaption: 'Australian troops aboard a troopship departing for Malaya, 1941',
   },
 
