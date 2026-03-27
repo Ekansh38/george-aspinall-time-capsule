@@ -98,7 +98,9 @@ export const chapters = {
       { year: 'Lifelong', title: 'The Bush', text: 'A passionate lover of the Australian bush. Bushwalking, gardening, and the outdoors' },
       { year: 'Lifelong', title: 'Community', text: 'An active member of his community, quietly carrying the weight of his wartime memories' },
     ],
+    image: '/family.png',
     imageCaption: 'George Aspinall in post-war Australia, with his family',
+    imageDisclaimer: 'Note: this photograph may not accurately depict George Aspinall or his family.',
   },
 }
 

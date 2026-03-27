@@ -460,6 +460,17 @@ export default function ChapterPage() {
               </>
             )}
           </div>
+          {chapter.imageDisclaimer && (
+            <div style={{
+              marginTop: '0.75rem',
+              fontFamily: 'Crimson Text, serif',
+              fontStyle: 'italic',
+              fontSize: '0.78rem',
+              color: `${accentColor}55`,
+            }}>
+              {chapter.imageDisclaimer}
+            </div>
+          )}
         </div>
       </div>
 
