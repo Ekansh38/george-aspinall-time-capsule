@@ -144,6 +144,13 @@ export default function TimeCapsule() {
           }}>
             Hover the artefacts and click to enter each chapter
           </p>
+          <p style={{
+            fontFamily: 'Crimson Text, serif', fontStyle: 'italic',
+            fontSize: '0.68rem', color: '#4a3a28', letterSpacing: '0.05em',
+            marginTop: '0.25rem',
+          }}>
+            Note: all artefacts are fictional and made up for this project.
+          </p>
         </div>
         <div style={{ width: '60px' }} />
       </motion.div>
