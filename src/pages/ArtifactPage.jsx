@@ -46,7 +46,7 @@ export default function ArtifactPage() {
     )
   }
 
-  const { label, description, body, SVG, pageChapter, size, letters, letterAnalysis } = artifact
+  const { label, description, body, SVG, pageChapter, size, letters, letterAnalysis, notCreated } = artifact
   const accentColor = chapterColors[pageChapter] || '#c8933d'
   const chapter = chapters[pageChapter]
 
@@ -156,6 +156,25 @@ export default function ArtifactPage() {
             }}>
               Artefact
             </div>
+            {notCreated && (
+              <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                fontFamily: 'Cinzel, serif',
+                fontSize: '0.55rem',
+                letterSpacing: '0.2em',
+                color: '#888',
+                border: '1px solid #44403a',
+                padding: '0.4rem 0.9rem',
+                borderRadius: '3px',
+                marginBottom: '1.2rem',
+                textTransform: 'uppercase',
+              }}>
+                <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#666', display: 'inline-block' }} />
+                Artifact not yet created
+              </div>
+            )}
             <h1 style={{
               fontFamily: 'Cinzel, serif',
               fontSize: 'clamp(1.8rem, 4vw, 3rem)',

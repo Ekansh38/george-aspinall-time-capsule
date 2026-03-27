@@ -352,6 +352,7 @@ export const NewspaperSVG = () => (
 export const artifacts = [
   {
     id: 'dogtags',
+    notCreated: true,
     label: 'Dog Tags',
     chapter: 'changi',
     pageChapter: 'changi',
@@ -364,6 +365,7 @@ export const artifacts = [
   },
   {
     id: 'camera',
+    notCreated: true,
     label: 'Kodak Brownie',
     chapter: 'railway',
     pageChapter: 'railway',
