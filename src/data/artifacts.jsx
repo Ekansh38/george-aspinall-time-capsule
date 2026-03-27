@@ -431,10 +431,13 @@ export const artifacts = [
   {
     id: 'railwaymap',
     label: 'Railway Map',
+    scans: [
+      { src: '/railway-map-scan.jpg', label: 'Map of Prisoner of War Camps — Bangkok-Burma Railway' },
+    ],
     chapter: 'railway',
     pageChapter: 'railway',
     description: 'A hand-drawn map of the 415km Burma-Thailand Death Railway',
-    body: `The Burma-Thailand Death Railway stretched 415 kilometres through dense jungle and mountain terrain between Bangkok, Thailand, and Rangoon, Burma. It was built between 1942 and 1943 by around 60,000 Allied prisoners of war, including Australians, British, and Dutch soldiers, alongside more than 200,000 Asian labourers forced into service by the Japanese.\n\nConditions were horrific. Prisoners worked up to 18-hour days with almost no food, tools, or medicine. Over 100,000 workers died during construction, including more than 12,000 Allied POWs. The railway was completed in October 1943, a staggering human cost for a single military supply line.`,
+    body: `The Burma-Thailand Death Railway was 415 kilometres long in dense jungle and mountain terrain between Bangkok, Thailand, and Rangoon, Burma. The building time was between 1942 and 1943. Around 60,000 Allied prisoners of war, including Australians, British, and Dutch soldiers, alongside more than 200,000 Asian labourers forced into service by the Japanese.\n\nConditions were terrible, hence the name. Prisoners worked up to 18-hour days with almost no food, tools, or medicine. Over 100,000 workers died during construction. More than 12,000 Allied POWs. The railway was completed in October 1943.`,
     position: { x: 22, y: 58 },
     rotation: 6,
     SVG: RailwayMapSVG,
