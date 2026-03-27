@@ -444,10 +444,13 @@ export const artifacts = [
   {
     id: 'enlistment',
     label: 'Enlistment Papers',
+    scans: [
+      { src: '/enlistment-form.jpg', label: 'Australian Military Forces — Attestation Form' },
+    ],
     chapter: 'enlistment',
     pageChapter: 'enlistment',
     description: 'The attestation paper George signed to join the 2nd AIF in 1941',
-    body: `In 1941, at just 17 years old, George Aspinall signed up to join the 2nd Australian Imperial Force. He enlisted as a Motor Mechanic and joined the 2nd/30th Infantry Battalion. Thousands of young Australians volunteered around the same time, driven by a sense of duty and patriotism.\n\nThe attestation paper George signed was an official military document recording his name, age, birthplace, trade, and religion. When he put his signature on that form in Paddington, he could not have imagined that he was about to be sent into one of the most devastating campaigns of the entire war.`,
+    body: `In 1941. At the young fresh age of 17 years old. George H. Aspinall signed up to join the 2nd Australian Imperial Force. He enlisted as a Motor Mechanic and joined the 2nd/30th Infantry Battalion. Many many young Australians volunteered around the same time. They where motivated by a sense of duty and patriotism.\n\nThe "attestation" paper George signed was an official military document recording his name, age, birthplace, trade, and religion. When he signed that document. He could not have imagined that he was about to be sent into one of the most devastating places ever.`,
     position: { x: 8, y: 42 },
     rotation: 10,
     SVG: EnlistmentSVG,

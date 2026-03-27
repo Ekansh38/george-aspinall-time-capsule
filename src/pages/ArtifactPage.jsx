@@ -255,6 +255,62 @@ export default function ArtifactPage() {
             </p>
           ))}
 
+          {/* Standalone scans section (for artifacts without letters) */}
+          {scans && !letters && (
+            <>
+              <div style={{
+                height: '1px',
+                background: `linear-gradient(90deg, transparent, ${accentColor}44, transparent)`,
+                margin: 'clamp(2.5rem, 5vw, 4rem) 0',
+              }} />
+              <div style={{
+                fontFamily: 'Cinzel, serif',
+                fontSize: '0.55rem',
+                letterSpacing: '0.25em',
+                color: `${accentColor}99`,
+                marginBottom: '1.5rem',
+                textTransform: 'uppercase',
+              }}>
+                Original Documents
+              </div>
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+                gap: '1.2rem',
+              }}>
+                {scans.map((scan, i) => (
+                  <div key={i} style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                    <a href={scan.src} target="_blank" rel="noreferrer">
+                      <img
+                        src={scan.src}
+                        alt={scan.label}
+                        style={{
+                          width: '100%',
+                          borderRadius: '3px',
+                          border: `1px solid ${accentColor}25`,
+                          display: 'block',
+                          filter: 'sepia(0.15)',
+                          transition: 'filter 0.2s, border-color 0.2s',
+                        }}
+                        onMouseEnter={e => { e.target.style.filter = 'sepia(0)'; e.target.style.borderColor = `${accentColor}66` }}
+                        onMouseLeave={e => { e.target.style.filter = 'sepia(0.15)'; e.target.style.borderColor = `${accentColor}25` }}
+                      />
+                    </a>
+                    <span style={{
+                      fontFamily: 'Crimson Text, serif',
+                      fontStyle: 'italic',
+                      fontSize: '0.8rem',
+                      color: '#6a5a40',
+                      textAlign: 'center',
+                    }}>
+                      {scan.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
           {/* Letters section */}
           {letters && (
             <>
