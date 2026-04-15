@@ -369,6 +369,9 @@ export const artifacts = [
     chapter: 'railway',
     pageChapter: 'railway',
     description: 'The hidden camera George used to document the Death Railway',
+    scans: [
+      { src: '/camera-artifact.jpg', label: 'The camera artifact' },
+    ],
     body: `The kodak brownie camera was used by George Aspinall to take photos in the prision camps and document his life. It was a vital part of his story and journey.`,
     position: { x: 60, y: 12 },
     rotation: 8,
